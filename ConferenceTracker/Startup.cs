@@ -37,6 +37,7 @@ namespace ConferenceTracker
             services.AddRazorPages();
             services.AddTransient<IPresentationRepository, PresentationRepository>();
             services.AddTransient<ISpeakerRepository, SpeakerRepository>();
+            SecretMessage = Configuration["ConfigureServices"];
         }
 
 
