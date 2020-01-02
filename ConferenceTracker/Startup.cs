@@ -65,6 +65,7 @@ namespace ConferenceTracker
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseCookiePolicy();
             app.UseRouting();
 
             app.UseAuthentication();
