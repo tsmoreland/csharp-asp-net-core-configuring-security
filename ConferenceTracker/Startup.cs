@@ -22,6 +22,8 @@ namespace ConferenceTracker
         public IConfiguration Configuration { get; }
         public string SecretMessage { get; set; }
 
+        private readonly string _allowedOrigins = "_allowedOrigins";
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
