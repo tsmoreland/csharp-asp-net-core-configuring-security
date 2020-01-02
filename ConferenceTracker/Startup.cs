@@ -43,6 +43,7 @@ namespace ConferenceTracker
             using (var context = scope.ServiceProvider.GetService<ApplicationDbContext>())
                 context.Database.EnsureCreated();
 
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
